@@ -1,0 +1,12 @@
+name: BanSystem
+main: de.maxcron.Xylit.GP1.BanSystem.main
+author: Xylit
+version: 1.0
+
+commands:
+  warn:
+    aliases: [ban]
+  warns:
+    aliases: [banlist]
+  unwarn:
+    aliases: [unban, pardon]

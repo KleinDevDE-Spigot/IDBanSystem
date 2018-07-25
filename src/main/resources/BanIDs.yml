@@ -1,0 +1,27 @@
+1:
+  Name: "ClientMods"
+  Beschreibung: "Unerlaubte Client Modifikationen > Hacked Clients, Xray etc."
+  BanGrund: "Unerlaubte Client Modifikationen"
+  BanZeit: "10d"
+  Permission: "BanSystem.ID.1"
+
+2:
+  Name:
+  Beschreibung:
+  BanGrund:
+  BanZeit:
+  Permission:
+
+3:
+  Name:
+  Beschreibung:
+  BanGrund:
+  BanZeit:
+  Permission:
+
+4:
+  Name:
+  Beschreibung:
+  BanGrund:
+  BanZeit:
+  Permission:

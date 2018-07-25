@@ -1,0 +1,14 @@
+LicenseKey:
+
+MySQL:
+  Host:
+  Port:
+  Username:
+  Password:
+  Database:
+
+Permissions:
+  warn: "BanSystem.warn"
+  warns: "BanSystem.warns"
+  bypass: "BanSystem.Bypass"
+  unwarn: "BanSystem.unwarn"

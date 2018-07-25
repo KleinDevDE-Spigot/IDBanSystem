@@ -1,0 +1,39 @@
+#  BanSystem -- Messages
+
+Prefix: "&8[&3BanSystem&8] "
+
+WarnBase: "%prefix% &f/warn [Spieler] [WarnID]"
+
+WarnMissingID: "%prefix% &fBitte gebe die WarnID ein -> /warn list"
+
+WarnListID: "%prefix% &fList available WarnIDs"
+
+WarnBroadcast:
+ - "&7==========[ &3WarnSystem &7]=========="
+ - "Der Spieler &7%player% &fwurde von &7%sender% verwarnt."
+ - "Grund: &7%Grund%"
+ - "Zeitraum: &7%zeitraum%"
+
+WarnPlayerBypass: "%prefix% &cDu kannst %player% nicht verwarnen"
+
+WarnsBase: "%prefix% &fWarns (%size%):"
+
+# %Name% | %UUID% | %BanID | %Grund% | %Aussteller%
+WarnsList: "&3%player% &7-- &3%Grund% ~ &e%Aussteller%"
+
+Unwarn: "%prefix% &fSpieler %player% wurde freigegebeen"
+
+UnwarnPlayerNotFound: "%prefix% &fDer Spieler %player% wurde nicht gefunden!"
+
+UnwarnPlayerOnline: "%prefix% &fSpieler %player% ist Online trozt Warn! >> Warn gelöscht"
+
+# %newline% | %BanGrund% | %Aussteller% | %Zeit%
+KickMessage: "&cDu wurdest verwarnt! %newline%%newline% &3Grund: &f%BanGrund% %newline%%newline% &3Ablauf: &f%Zeit% %newline% &3Mit freundlichen Grüßen &f%Aussteller%"
+
+NoPermission: "%prefix% &cDu hast keine Rechte auf diesen Befehl!"
+
+NoPermissionforID: "%prefix% &cDu hast keine Rechte auf diese ID!"
+
+ToManyArguments: "%prefix% &cZu viele Argumente! Usage: &7%BaseCommand%"
+
+PlayerNotFound: "%prefix% &cDer Spieler %Name% wurde nicht gefunden!"
