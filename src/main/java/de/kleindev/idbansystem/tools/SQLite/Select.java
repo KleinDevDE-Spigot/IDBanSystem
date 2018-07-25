@@ -1,18 +1,9 @@
-package de.maxcron.Xylit.GP1.BanSystem.Tools.SQLite;
-
-import com.sun.org.apache.xerces.internal.xs.StringList;
+package de.kleindev.idbansystem.tools.SQLite;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ===============================
- * Sandra
- * Created by Xylit
- * 2017
- * ==============================
- */
 public class Select {
     public static String main(String TableName, String Name, String Content, String Gesucht) {
 

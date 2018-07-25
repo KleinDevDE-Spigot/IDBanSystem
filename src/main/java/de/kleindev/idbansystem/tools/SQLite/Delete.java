@@ -1,15 +1,8 @@
-package de.maxcron.Xylit.GP1.BanSystem.Tools.SQLite;
+package de.kleindev.idbansystem.tools.SQLite;
 
 import java.sql.Connection;
 import java.sql.Statement;
 
-/**
- * ===============================
- * GastPlugin - BanSystem - FlexDE
- * Created by Xylit
- * 2017
- * ==============================
- */
 public class Delete{
         public static void main(String TableName, String uuid) {
             Connection c = null;

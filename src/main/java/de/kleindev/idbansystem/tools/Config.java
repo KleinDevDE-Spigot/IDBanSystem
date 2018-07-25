@@ -1,6 +1,6 @@
-package de.maxcron.Xylit.GP1.BanSystem.Tools;
+package de.kleindev.idbansystem.tools;
 
-import de.maxcron.Xylit.GP1.BanSystem.main;
+import de.kleindev.idbansystem.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -10,12 +10,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ========================
- * Produced by Xylit
- * 2017
- * ========================
- */
 public class Config {
     static File cfile;
     static FileConfiguration config;
@@ -35,7 +29,7 @@ public class Config {
     }
 
     public static FileConfiguration load(String FileName) {
-        File df = new File(main.plugin.getDataFolder().getPath());
+        File df = new File(Main.plugin.getDataFolder().getPath());
         cfile = new File(df, File.separator + FileName);
         config = YamlConfiguration.loadConfiguration(cfile);
         return config;
@@ -79,8 +73,8 @@ public class Config {
         FileOutputStream fos = null;
         BufferedInputStream bis = null;
         try {
-            String pluginPath = main.plugin.getDataFolder() + java.io.File.separator + File;
-            bis = new BufferedInputStream(main.plugin.getResource(File));
+            String pluginPath = Main.plugin.getDataFolder() + java.io.File.separator + File;
+            bis = new BufferedInputStream(Main.plugin.getResource(File));
             fos = new FileOutputStream(pluginPath);
 
             int count = -1;

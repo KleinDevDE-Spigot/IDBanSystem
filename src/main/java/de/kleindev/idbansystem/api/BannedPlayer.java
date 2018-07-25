@@ -1,16 +1,9 @@
-package de.maxcron.Xylit.GP1.BanSystem.API;
+package de.kleindev.idbansystem.api;
 
 import org.bukkit.OfflinePlayer;
 
 import java.util.UUID;
 
-/**
- * ===============================
- * GastPlugin - BanSystem - FlexDE
- * Created by Xylit
- * 2017
- * ==============================
- */
 public class BannedPlayer {
 
     private OfflinePlayer offlinePlayer;

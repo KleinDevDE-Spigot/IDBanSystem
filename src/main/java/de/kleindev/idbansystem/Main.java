@@ -1,27 +1,19 @@
-package de.maxcron.Xylit.GP1.BanSystem;
+package de.kleindev.idbansystem;
 
-import de.maxcron.Xylit.GP1.BanSystem.Commands.Unwarn;
-import de.maxcron.Xylit.GP1.BanSystem.Commands.Warn;
-import de.maxcron.Xylit.GP1.BanSystem.Commands.Warns;
-import de.maxcron.Xylit.GP1.BanSystem.Listener.LoginEvent;
-import de.maxcron.Xylit.GP1.BanSystem.Tools.Config;
-import de.maxcron.Xylit.GP1.BanSystem.Tools.ReadURL;
-import de.maxcron.Xylit.GP1.BanSystem.Tools.SQLite.ConnectSQLite;
-import de.maxcron.Xylit.GP1.BanSystem.Tools.SQLite.CreateTable;
+import de.kleindev.idbansystem.commands.Unwarn;
+import de.kleindev.idbansystem.commands.Warn;
+import de.kleindev.idbansystem.commands.Warns;
+import de.kleindev.idbansystem.listener.LoginEvent;
+import de.kleindev.idbansystem.tools.Config;
+import de.kleindev.idbansystem.tools.SQLite.ConnectSQLite;
+import de.kleindev.idbansystem.tools.SQLite.CreateTable;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-/**
- * ===============================
- * GastPlugin - BanSystem - FlexDE
- * Created by Xylit
- * 2017
- * ==============================
- */
-public class main extends JavaPlugin{
+public class Main extends JavaPlugin{
     public static Plugin plugin;
     public static FileConfiguration cfg;
     public static FileConfiguration id;
@@ -36,7 +28,7 @@ public class main extends JavaPlugin{
         Config.copy("Messages.yml");
         id = Config.load("BanIDs.yml");
         message = Config.load("Messages.yml");
-        Check();
+        check();
         preSetup();
     }
 
@@ -50,7 +42,7 @@ public class main extends JavaPlugin{
         CreateTable.create();
     }
 
-    private void Check(){
+    private void check(){
         if (cfg.getString("Permissions.warn") == null) {
             System.err.print("[BanSystem] The Permission for /warn are not set!!");
             System.exit(1);

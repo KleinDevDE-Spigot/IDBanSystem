@@ -1,9 +1,6 @@
-package de.maxcron.Xylit.GP1.BanSystem.Tools;
+package de.kleindev.idbansystem.tools;
 
 
-/**
- * Created by Klein on 27.11.2016.
- */
 import java.sql.*;
 
 public class MySQL {

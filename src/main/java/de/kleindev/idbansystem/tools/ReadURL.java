@@ -1,4 +1,4 @@
-package de.maxcron.Xylit.GP1.BanSystem.Tools;
+package de.kleindev.idbansystem.tools;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,13 +9,6 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ===============================
- * Minecron Reallife
- * Created by Xylit
- * 2017
- * ==============================
- */
 public class ReadURL {
     public static List<String> listLines(String URL){
         URL url = null;
